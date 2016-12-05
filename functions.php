@@ -19,13 +19,6 @@ function sitename_remove_version( $src ) {
 add_filter( 'script_loader_src', 'awakekat_remove_wp_version' );
 add_filter( 'style_loader_src', 'awakekat_remove_wp_version' );
 
-/* ===============================================
-  ALTERNATIVE remove metatag generator from header
- =============================================== */
-function sitename_remove_version() {
-  return '';
-}
-add_filter('the_generator', 'sitename_remove_version');
 
 /* ===================================
  *  CSS and Javascript - Bower install
